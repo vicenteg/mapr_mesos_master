@@ -6,3 +6,7 @@
   yum: name=mapr-mesos-master state=present
   environment: proxy_env
 
+- name: install mapr-mesos-marathon
+  sudo_user: root
+  yum: name=mapr-mesos-marathon state=present
+  environment: proxy_env
