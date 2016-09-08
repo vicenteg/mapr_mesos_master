@@ -5,10 +5,8 @@
   become: yes
   become_user: root
   yum: name=mapr-mesos-master state=present
-  environment: '{{proxy_env}}'
 
 - name: install mapr-mesos-marathon
   become: yes
   become_user: root
   yum: name=mapr-mesos-marathon state=present
-  environment: '{{proxy_env}}'
